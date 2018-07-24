@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="script.js"></script>
+	<title>eventos de formularios</title>
+</head>
+<body>
+	<form method="POST" onsubmit="return false">
+		<input type="text" name="nome" onfocus="foco()" onblur="desfoco()" /><br/><br/>
+
+		<select name="cidade" onchange="mudar(this)">
+			<option>SP</option>
+			<option>RJ</option>
+			<option>BH</option>
+			<option>RC</option>
+		</select><br/><br/>
+		<input type="submit" value="Enviar"/>
+	</form>
+</body>
+</html>
